@@ -1,0 +1,7 @@
+name: Throwaballs
+description: Throwable fireballs!
+version: ${projectVersion}
+author: interrrp
+
+main: com.github.interrrp.throwaballs.ThrowaballsPlugin
+api-version: 1.20
