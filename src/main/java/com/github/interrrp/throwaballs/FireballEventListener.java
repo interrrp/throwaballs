@@ -9,7 +9,11 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
 public class FireballEventListener implements Listener {
-    private FireballService fireballService = new FireballService(1.0f, 20.0f, false);
+    private FireballService fireballService;
+
+    public FireballEventListener(FireballService fireballService) {
+        this.fireballService = fireballService;
+    }
 
     @EventHandler
     public void onBlockIgnite(BlockIgniteEvent event) {
